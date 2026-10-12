@@ -1,6 +1,6 @@
 // Onsen Lab launcher: network-first, falls back to cache when offline.
-const CACHE = "onsenlab-launcher-v1";
-const CORE = ["./", "index.html", "manifest.webmanifest", "ol1-32.png", "ol1-180.png", "ol1-192.png", "ol1-512.png", "ol1-maskable-512.png"];
+const CACHE = "onsenlab-launcher-v2";
+const CORE = ["./", "index.html", "manifest.webmanifest", "ol2-32.png", "ol2-180.png", "ol2-192.png", "ol2-512.png", "ol2-maskable-512.png"];
 
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(CORE)).then(() => self.skipWaiting()));
